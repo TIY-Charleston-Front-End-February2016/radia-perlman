@@ -10,10 +10,10 @@ var insult = {
     name: ""
   },
   presentation: function () {
-    console.log("Presentation");
+
   },
   events: function () {
-    console.log("Events");
+
   },
   getRandomWord: function() {
     // example from http://randomword.setgetgo.com/
@@ -36,9 +36,14 @@ var insult = {
     for(var i = 0; i < numBad; i++){
       insult.config.wordsArray.push(badWordsList.list[_.random(0, badWordsList.list.length)]);
     }
+    // insult.config.wordsArray = _.shuffle(insult.config.wordsArray);
   },
   generateInsultString: function() {
-
+    insult.config.insultString = insult.config.name + " is a ";
+    insult.config.wordsArray.forEach(function(el){
+      return insult.config.insultString += el + " ";
+    })
+    insult.config.insultString -= " " + "!";
   }
 
 }
