@@ -19,7 +19,7 @@ var insult = {
       insult.config.name =  $("input[name='name']").val();
       insult.generateWordList(3,2);
       insult.generateInsultString();
-      $(".insultText").html(insult.config.insultString)
+      $(".insultText").html(insult.config.insultString);
       responsiveVoice.speak(insult.config.insultString)
     });
   },

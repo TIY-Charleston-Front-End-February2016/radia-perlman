@@ -10,5 +10,5 @@ var badWordsList = {
     "p0rn", "pecker", "penis", "penisfucker", "phonesex", "pigfucker", "piss", "pisser", "pissflap", "poop", "porn", "porno", "pornography", "prick", "prono", "pube", "pusse", "pussy", "rectum", "rimjaw",
     "s hit", "s.o.b.", "sadist", "schlong", "scroat", "scrote", "scrotum", "semen", "sex", "sh!+", "sh!t", "sh1t", "shitdick", "shitfuck", "shitfull", "shithead", "shitter", "skank", "slut", "smegma",
     "snatch", "son-of-a-bitch", "spunk", "s_h_i_t", "testical", "testicle", "tit", "titfuck", "tittiefucker", "tittyfuck", "tosser", "turd", "tw4t", "twat", "twathead", "vagina", "viagra", "vulva", "wang", "wanker",
-    "whore", "willy", "xxx"]
+    "whore", "willy", "xxx", "slut-face", "whore-mouth", "gangbangbutt", "fart-fucker", "armpit-breath", "barbeque-butt", "porno-face", "twerking-hobo", "fart-sniffer", "butt-wrinkle", "garbage-head", "buttface", "dog-breath", "buttburger", "pee-pee-face", "eyebrowless-person", "fuck-nugget", "terd-nose", "vulva-nose", "poop-crotch", "stinky-fart", "dickweed", "toilet-fucker", "ball-sniffer"]
 }
