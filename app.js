@@ -9,5 +9,4 @@ var insult = {
   events: function () {
 
   },
-  
-}
+};
