@@ -13,7 +13,15 @@ var insult = {
     console.log("Presentation");
   },
   events: function () {
-    console.log("Events");
+    // thanks Brandon!
+    $(".giantButton").on("click", function(event){
+      event.preventDefault();
+      insult.config.name =  $("input[name='name']").val();
+      insult.generateWordList(3,2);
+      insult.generateInsultString();
+      $(".insultText").html(insult.config.insultString)
+    });
+
   },
   getRandomWord: function() {
     // example from http://randomword.setgetgo.com/
@@ -25,6 +33,7 @@ var insult = {
         jsonpCallback: 'insult.returnWord'
     });
   },
+
   returnWord: function(data) {
     insult.config.wordsArray.push(data.Word);
   },
@@ -40,6 +49,7 @@ var insult = {
   generateInsultString: function() {
 
   }
+
 
 }
 
