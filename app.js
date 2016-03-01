@@ -23,7 +23,7 @@ var insult = {
       insult.generateInsultString();
       $(".insultText").html(insult.config.insultString);
       responsiveVoice.speak(insult.config.insultString);
-    });
+    })
   },
   getRandomWords: function() {
     var requestStr = "";
