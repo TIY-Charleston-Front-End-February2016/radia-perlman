@@ -43,7 +43,7 @@ var insult = {
       event.preventDefault();
       insult.config.voice = $(this).data('voice');
       $('.dropdown-content').css({display: 'none'});
-      $('.dropdown h3').text($(this).data('voice'));
+      $(".dropdown h3").text($(this).data("voice"));
     });
 
     $('.dropdown').hover(function(event){
