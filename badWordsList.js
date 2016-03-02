@@ -1,4 +1,4 @@
-// bad words from https://www.npmjs.com/package/badwords
+// bad words edited from https://www.npmjs.com/package/badwords
 
 var badWordsList = {
 
@@ -16,7 +16,8 @@ var badWordsList = {
     "snatch", "son-of-a-bitch", "spunk-stained-face", "s h i t h e a d", "testie", "testicle", "tit", "tit-fuck", "tittie-fucker", "titty-fuck", "tosser", "turd", "twat", "twat-head", "vagina", "viagra", "vulva", "wang", "wanker",
     "whore", "willy", "x x x tra big asshole", "triple asshole", "slut-face", "whore-mouth", "gang-bang-butt", "fart-fucker", "armpit-breath", "barbeque-butt", "porno-face", "twerking-hobo", "fart-sniffer", "butt-wrinkle", "garbage-head", "buttface", "dog-breath", "butt-burger", "pee-pee-face", "eyebrowless-person",
     "slut-face", "fuck-nugget", "terd-nose", "vulva-nose", "booger-labia", "booger-butt", "poop-crotch", "stinky-fart", "butt-booger", "dickweed", "toilet-fucker", "ball-sniffer", "b i t c h", "trollop", "maggot", "ninny", "elitist", "butter-face", "wanker", "slag",
-     "barmy", "dodgy berk", "git", "naff", "plonker", "prat", "trollop", "twit", "lazy sod", "wazzock", "ninny", "berk", "chuffer", "gannet", "maggot"]
+    "barmy", "dodgy berk", "git", "naff", "plonker", "prat", "trollop", "twit", "lazy sod", "wazzock", "ninny", "berk", "chuffer", "gannet", "maggot"]
+
 
 }
 
