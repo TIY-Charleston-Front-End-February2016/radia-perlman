@@ -44,7 +44,6 @@ var insult = {
       insult.config.voice = $(this).data('voice');
       $('.dropdown-content').css({display: 'none'});
       $(".dropdown h3").text($(this).data("voice"));
-
     });
 
     $('.dropdown').hover(function(event){
@@ -109,6 +108,7 @@ var insult = {
     });
   },
   getSpokenName: function(name){
+    console.log("Insulting!");
     insult.config.name = name;
     insult.deployInsult();
   },
