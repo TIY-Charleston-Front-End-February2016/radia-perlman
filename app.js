@@ -37,6 +37,7 @@ var insult = {
     $(".smallButtonArea").on("click", ".smallButton", function(event){
       responsiveVoice.speak(insult.config.insultString, insult.config.voice);
     });
+
   },
   deployInsult: function(){
     var rand = insult.getRandomInsultNumbers();
@@ -91,6 +92,7 @@ var insult = {
   },
   getSpokenName: function(name){
     insult.config.name = name;
+    insult.deployInsult();
   },
   commands: {
     "insult *name": function(name){insult.getSpokenName(name)},
