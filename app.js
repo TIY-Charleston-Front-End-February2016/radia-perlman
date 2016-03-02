@@ -39,10 +39,11 @@ var insult = {
       setTimeout(annyang.abort, 10000);
     })
 
-    $('a').on("click", function(event){
+    $('.dropdown').on("click", "a", function(event){
       event.preventDefault();
       insult.config.voice = $(this).data('voice');
       $('.dropdown-content').css({display: 'none'});
+      $('.dropdown h3').text($(this).data('voice'));
     });
 
     $('.dropdown').hover(function(event){
@@ -107,6 +108,7 @@ var insult = {
     });
   },
   getSpokenName: function(name){
+    console.log("Insulting!");
     insult.config.name = name;
     insult.deployInsult();
   },
