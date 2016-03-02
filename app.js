@@ -9,7 +9,8 @@ var insult = {
     wordsArray: [],
     randomArray: testList.list,
     name: "",
-    apiKey: ""
+    apiKey: "",
+    numInsults: 0
   },
   presentation: function () {
     // insult.getRandomWords();
@@ -35,8 +36,6 @@ var insult = {
     $(".smallButtonArea").on("click", ".smallButton", function(event){
       responsiveVoice.speak(insult.config.insultString);
     });
-
-
   },
   getRandomWords: function() {
     var requestStr = "";
