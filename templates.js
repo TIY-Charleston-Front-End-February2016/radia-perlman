@@ -1,5 +1,5 @@
 var templates = {
   voice: [
-    "<a href='#' data-voice='<%= name %>'><%= name %></a>"
+    "<li><a href='#' data-voice='<%= name %>'><%= name %></a></li>"
   ].join("")
 }

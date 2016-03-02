@@ -1,4 +1,3 @@
-
 var insult = {
   init: function () {
     insult.presentation();
@@ -17,8 +16,10 @@ var insult = {
   },
   presentation: function () {
     insult.getVoiceList();
+    annyang.addCommands(insult.commands);
+    annyang.start();
   },
-  events: function () {
+  events: function() {
     // thanks Brandon!
     $(".giantButton").on("click", function(event){
       event.preventDefault();
@@ -86,9 +87,14 @@ var insult = {
   buildVoiceList: function(){
     insult.config.voiceArray.forEach(function(el){
       insult.config.voiceStr += insult.displayVoice(el, templates.voice);
-    })
+    });
+  },
+  getSpokenName: function(name){
+    insult.config.name = name;
+  },
+  commands: {
+    "insult *name": function(name){insult.getSpokenName(name)},
   }
-
 };
 
 $(document).ready(function(){
