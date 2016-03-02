@@ -16,6 +16,8 @@ var insult = {
   },
   presentation: function () {
     insult.getVoiceList();
+    insult.buildVoiceList();
+    $('.dropdown-content ul').html(insult.config.voiceStr);
     annyang.addCommands(insult.commands);
   },
   events: function() {
@@ -26,14 +28,6 @@ var insult = {
       insult.deployInsult();
     });
 
-
-    // small button appears
-    $('.giantButton').on('click', function(event) {
-      event.preventDefault();
-          var button = '<button class="smallButton">Play Again</button>';
-          $('.smallButtonArea').html(button);
-    });
-
     $(".smallButtonArea").on("click", ".smallButton", function(event){
       responsiveVoice.speak(insult.config.insultString, insult.config.voice);
     });
@@ -41,20 +35,33 @@ var insult = {
     $("body").on("keydown", function(event){
       if(event.keyCode === 32){
         annyang.start();
-
       }
-      setTimeout(annyang.abort, 3000);
+      setTimeout(annyang.abort, 10000);
+    })
 
+    $('a').on("click", function(event){
+      event.preventDefault();
+      insult.config.voice = $(this).data('voice');
+      $('.dropdown-content').css({display: 'none'});
+    });
 
+    $('.dropdown').hover(function(event){
+      $('.dropdown-content').removeAttr('style');
     })
 
   },
   deployInsult: function(){
+    if($("input[name='numInsults']").val()) {
+      insult.config.numInsults = $("input[name='numInsults']").val();
+    }
+
     var rand = insult.getRandomInsultNumbers();
+    var button = '<button class="smallButton">Play Again</button>';
     insult.generateWordList(rand[0], rand[1]);
     insult.generateInsultString();
     $(".insultText").html(insult.config.insultString);
     responsiveVoice.speak(insult.config.insultString, insult.config.voice);
+    $('.smallButtonArea').html(button);
   },
   getRandomInsultNumbers: function(){
     var firstNumber = _.random(0, insult.config.numInsults);
