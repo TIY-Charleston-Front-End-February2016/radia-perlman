@@ -17,7 +17,6 @@ var insult = {
   presentation: function () {
     insult.getVoiceList();
     annyang.addCommands(insult.commands);
-
   },
   events: function() {
     // thanks Brandon!
@@ -37,6 +36,7 @@ var insult = {
     $(".smallButtonArea").on("click", ".smallButton", function(event){
       responsiveVoice.speak(insult.config.insultString, insult.config.voice);
     });
+
     $("body").on("keydown", function(event){
       if(event.keyCode === 32){
         annyang.start();
@@ -101,6 +101,7 @@ var insult = {
   },
   getSpokenName: function(name){
     insult.config.name = name;
+    insult.deployInsult();
   },
   commands: {
     "insult *name": function(name){insult.getSpokenName(name)},
