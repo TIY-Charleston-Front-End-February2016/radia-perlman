@@ -23,7 +23,7 @@ body {
   height: 100px;
   width: 300px;
   color: black;
-  cursor: hoover;
+  cursor: hover;
   animation: blink 1s steps(5, start) infinite; }
 
 #wrapper {

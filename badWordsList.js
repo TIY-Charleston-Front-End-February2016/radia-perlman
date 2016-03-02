@@ -2,7 +2,9 @@
 
 var badWordsList = {
 
-  list: ["anus", "arse", "ass", "asshole", "boob", "ballbag", "ballsac", "bastard", "bellend", "biatch", "bitch", "biznatch",
+
+
+  list: ["anus", "arse", "ass", "asshole", "boob", "ball-bag", "ball-sac", "bastard", "bellend", "biatch", "bitch", "biznatch",
     "blowjob", "bollock", "bollok", "boner", "boooooooob", "boooooooooob", "breast", "bum", "bunny fucker", "butt", "butthole", "butt-munch", "butt-plug",
     "carpet muncher", "clit", "clitoris", "cock", "cock-sucker", "cockface", "cockhead", "cock-munch", "cock-muncher", "cock-suck", "crap", "cum", "cumshot", "cunnilingus", "cunt", "cunt-lick", "cunt-licker",
     "cyber-fucker", "dick", "dickhead", "dildo", "dog-fucker", "douche", "ejaculate", "ejaculation-station",  "f u c k", "f u c k e r", "fanny", "fanny-flap", "fanny-fucker", "fany-breath", "fart-head",
@@ -12,8 +14,8 @@ var badWordsList = {
    "pecker", "penis", "penis fucker", "phone sex dude", "pig fucker", "piss", "pisser", "piss flap", "poooooooooooop", "porn", "porno", "pornography", "prick", "pube", "pussy", "rectum",
     "s o b", "sadist", "schlong", "scrote", "scrote sac", "scrotum", "semen", "vinegar stroke", "shit dick", "shit fuck", "doo doo breath", "shitter-mouth", "skank", "slut", "smegma",
     "snatch", "son-of-a-bitch", "spunk-stained-face", "s h i t h e a d", "testie", "testicle", "tit", "tit-fuck", "tittie-fucker", "titty-fuck", "tosser", "turd", "twat", "twat-head", "vagina", "viagra", "vulva", "wang", "wanker",
-    "whore", "willy", "x x x tra big asshole", "triple asshole", "slut-face", "whore-mouth", "gang-bang-butt", "fart-fucker", "armpit-breath", "barbeque-butt", "porno-face", "twerking-hobo", "fart-sniffer", "butt-wrinkle", "garbage-head", "buttface", "dog-breath", "buttburger", "pee-pee-face", "eyebrowless-person",
-    "fuck-nugget", "terd-nose", "vulva-nose", "booger-labia", "booger-butt", "poop-crotch", "stinky-fart", "butt-booger", "dickweed", "toilet-fucker", "ball-sniffer", "b i t c h", "trollop", "maggot" ,"ninny","pillock","elitist","butterface"]
+    "whore", "willy", "x x x tra big asshole", "triple asshole", "slut-face", "whore-mouth", "gang-bang-butt", "fart-fucker", "armpit-breath", "barbeque-butt", "porno-face", "twerking-hobo", "fart-sniffer", "butt-wrinkle", "garbage-head", "buttface", "dog-breath", "butt-burger", "pee-pee-face", "eyebrowless-person", "slut-face", "fuck-nugget", "terd-nose", "vulva-nose", "booger-labia", "booger-butt", "poop-crotch", "stinky-fart", "butt-booger", "dickweed", "toilet-fucker", "ball-sniffer", "b i t c h", "trollop", "maggot", "ninny", "elitist", "butter-face", "wanker", "slag", "barmy", "dodgy berk", "git", "naff", "plonker", "prat", "trollop", "twit", "lazy sod", "wazzock", "ninny", "berk", "chuffer", "gannet", "maggot"]
+
 
 
 
@@ -2023,8 +2025,12 @@ word: "zaires"
   return el.word;
 })
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 }
 =======
 >>>>>>> 524fc271ba993a239d7c84f0d25243f908835214
+=======
+}
+>>>>>>> 507c97638511457d96034cb8dac27493029bce00
