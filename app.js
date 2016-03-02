@@ -22,6 +22,16 @@ var insult = {
       $(".insultText").html(insult.config.insultString);
       responsiveVoice.speak(insult.config.insultString)
     });
+
+    $('.giantButton').on('click', function(event) {
+      event.preventDefault();
+          var button = '<button class="smallButton">Play Again</button>';
+          $('.smallButtonArea').append(button);
+    });
+
+    $(".smallButton").on("click", function(event){
+      responsiveVoice.speak(insult.config.insultString)
+    });
   },
   getRandomWord: function() {
     // example from http://randomword.setgetgo.com/
@@ -57,6 +67,8 @@ var insult = {
 
 
 }
+
+
 
 $(document).ready(function(){
   insult.init();
