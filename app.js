@@ -44,7 +44,7 @@ var insult = {
       insult.config.voice = $(this).data('voice');
       $('.dropdown-content').css({display: 'none'});
     });
-    
+
     $('.dropdown').hover(function(event){
       $('.dropdown-content').removeAttr('style');
     })
@@ -54,7 +54,6 @@ var insult = {
     if($("input[name='numInsults']").val()) {
       insult.config.numInsults = $("input[name='numInsults']").val();
     }
-
     var rand = insult.getRandomInsultNumbers();
     var button = '<button class="smallButton">Play Again</button>';
     insult.generateWordList(rand[0], rand[1]);
