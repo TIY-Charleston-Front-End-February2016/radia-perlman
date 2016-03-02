@@ -1,4 +1,3 @@
-
 var insult = {
   init: function () {
     insult.presentation();
@@ -12,10 +11,12 @@ var insult = {
     apiKey: "",
     numInsults: 0
   },
-  presentation: function () {
+  presentation: function() {
+    annyang.addCommands(insult.commands);
     // insult.getRandomWords();
+    annyang.start();
   },
-  events: function () {
+  events: function() {
     // thanks Brandon!
     $(".giantButton").on("click", function(event){
       event.preventDefault();
@@ -47,7 +48,6 @@ var insult = {
   returnWords: function(data) {
     insult.config.randomArray = data;
   },
-
   generateWordList: function(numRandom, numBad) {
     insult.config.wordsArray = [];
     for(var i = 0; i < numRandom; i++){
@@ -64,8 +64,13 @@ var insult = {
       return insult.config.insultString += el + " ";
     });
     insult.config.insultString += "!";
+  },
+  getSpokenName: function(name){
+    insult.config.name = name;
+  },
+  commands: {
+    "insult *name": function(name){insult.getSpokenName(name)},
   }
-
 };
 
 $(document).ready(function(){
