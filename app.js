@@ -9,7 +9,7 @@ var insult = {
     randomArray: testList.list,
     name: "",
     apiKey: "",
-    numInsults: 5,
+    numInsults: "",
     voice: "UK English Female",
     voiceArray: [],
     voiceStr: ""
@@ -23,8 +23,11 @@ var insult = {
     $(".giantButton").on("click", function(event){
       event.preventDefault();
       insult.config.name =  $("input[name='name']").val();
+      insult.config.numInsults= $("input[name='numInsults']").val();
+      insult.config.voice=$(
       insult.deployInsult();
     });
+
 
     // small button appears
     $('.giantButton').on('click', function(event) {

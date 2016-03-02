@@ -107,6 +107,7 @@ li{
     padding-right: 10%;
     border-radius: 30px;
     box-shadow:  0 2px grey, -1px 0 lightgrey, 0 -1px lightgrey, 2px 0 grey;
+    font-size:20px;
 }
 
 .dropdown-content {
@@ -124,7 +125,7 @@ li{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.number {
+.numInsults {
 margin-top: 10%;
 padding:2%;
 // height:25px;
