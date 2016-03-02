@@ -22,8 +22,21 @@ var insult = {
       insult.generateWordList(3,2);
       insult.generateInsultString();
       $(".insultText").html(insult.config.insultString);
-      responsiveVoice.speak(insult.config.insultString);
-    })
+      responsiveVoice.speak(insult.config.insultString)
+    });
+
+    // small button appears
+    $('.giantButton').on('click', function(event) {
+      event.preventDefault();
+          var button = '<button class="smallButton">Play Again</button>';
+          $('.smallButtonArea').append(button);
+    });
+
+    $(".smallButton").on("click", function(event){
+      responsiveVoice.speak(insult.config.insultString)
+    });
+
+
   },
   getRandomWords: function() {
     var requestStr = "";
@@ -54,6 +67,8 @@ var insult = {
   }
 
 }
+
+
 
 $(document).ready(function(){
   insult.init();
