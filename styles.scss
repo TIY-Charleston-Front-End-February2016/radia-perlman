@@ -19,7 +19,7 @@ body{
     height:50px;
     background:#F0F0F0;
     border:1px solid #CCC;
-    width:960px;
+    width:100%;
     margin:0px auto;
     background-image: url('uncensored.jpg');
     background-repeat: no-repeat;
@@ -107,6 +107,7 @@ li{
     padding-right: 10%;
     border-radius: 30px;
     box-shadow:  0 2px grey, -1px 0 lightgrey, 0 -1px lightgrey, 2px 0 grey;
+    font-size:20px;
 }
 
 .dropdown-content {
@@ -118,13 +119,15 @@ li{
     border-radius: 50px;
     height: 200px;
     overflow: scroll;
+    left:0;
     // z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.number {
+
+.numInsults {
 margin-top: 10%;
 padding:2%;
 // height:25px;
