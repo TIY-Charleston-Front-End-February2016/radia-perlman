@@ -44,7 +44,7 @@ var insult = {
       insult.config.voice = $(this).data('voice');
       $('.dropdown-content').css({display: 'none'});
     });
-    
+
     $('.dropdown').hover(function(event){
       $('.dropdown-content').removeAttr('style');
     })
