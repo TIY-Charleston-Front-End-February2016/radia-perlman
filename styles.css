@@ -15,7 +15,7 @@ body {
   height: 50px;
   background: #F0F0F0;
   border: 1px solid #CCC;
-  width: 960px;
+  width: 100%;
   margin: 0px auto;
   background-image: url("uncensored.jpg");
   background-repeat: no-repeat;
@@ -100,7 +100,8 @@ li {
   background-color: rgba(250, 250, 250, 0.7);
   border-radius: 50px;
   height: 200px;
-  overflow: scroll; }
+  overflow: scroll;
+  left: 0; }
 
 .dropdown:hover .dropdown-content {
   display: block; }
