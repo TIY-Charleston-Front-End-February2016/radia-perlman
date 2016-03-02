@@ -68,8 +68,6 @@ var insult = {
 
 }
 
-
-
 $(document).ready(function(){
   insult.init();
 });
