@@ -48,6 +48,7 @@ var insult = {
   returnWords: function(data) {
     insult.config.randomArray = data;
   },
+
   generateWordList: function(numRandom, numBad) {
     insult.config.wordsArray = [];
     for(var i = 0; i < numRandom; i++){
