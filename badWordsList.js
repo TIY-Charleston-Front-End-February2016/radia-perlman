@@ -2012,5 +2012,5 @@ id: 355472,
 word: "zaires"
 }
 ].map(function(el){
-  return el.word
+  return el.word;
 })
