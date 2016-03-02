@@ -54,7 +54,6 @@ var insult = {
     if($("input[name='numInsults']").val()) {
       insult.config.numInsults = $("input[name='numInsults']").val();
     }
-
     var rand = insult.getRandomInsultNumbers();
     var button = '<button class="smallButton">Play Again</button>';
     insult.generateWordList(rand[0], rand[1]);
