@@ -30,7 +30,12 @@
   height: 100px;
   width: 300px;
   color: black;
+<<<<<<< HEAD
   animation: pulse 2s infinite; }
+=======
+  cursor: hover;
+  animation: blink 1s steps(5, start) infinite; }
+>>>>>>> da0856ae800a022c61e1187dfe05efe9f94b8a67
 
 #wrapper {
   align-content: center;

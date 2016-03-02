@@ -29,10 +29,10 @@ var insult = {
     $('.giantButton').on('click', function(event) {
       event.preventDefault();
           var button = '<button class="smallButton">Play Again</button>';
-          $('.smallButtonArea').append(button);
+          $('.smallButtonArea').html(button);
     });
 
-    $(".smallButton").on("click", function(event){
+    $(".smallButtonArea").on("click", ".smallButton", function(event){
       responsiveVoice.speak(insult.config.insultString);
     });
 
@@ -68,8 +68,6 @@ var insult = {
   }
 
 };
-
-
 
 $(document).ready(function(){
   insult.init();
