@@ -12,10 +12,10 @@ var insult = {
     apiKey: "",
     numInsults: 5,
     voice: "UK English Female",
-    voiceArray = [];
+    voiceArray: [],
+    voiceStr: ""
   },
   presentation: function () {
-
     insult.getVoiceList();
   },
   events: function () {
@@ -79,11 +79,14 @@ var insult = {
   getVoiceList: function(){
     insult.config.voiceArray = responsiveVoice.getVoices();
   },
-  displayVoice: function(){
-
-  }
+  displayVoice: function(data, str){
+    var tmpl = _.template(str);
+    return tmpl(data);
+  },
   buildVoiceList: function(){
-    var tmpl =
+    insult.config.voiceArray.forEach(function(el){
+      insult.config.voiceStr += insult.displayVoice(el, templates.voice);
+    })
   }
 
 };
