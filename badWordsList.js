@@ -1,5 +1,7 @@
 // bad words from https://www.npmjs.com/package/badwords
+
 var badWordsList = {
+
   list: ["anus", "arse", "ass", "asshole", "boob", "ballbag", "ballsac", "bastard", "bellend", "biatch", "bitch", "biznatch",
     "blowjob", "bollock", "bollok", "boner", "boooooooob", "boooooooooob", "breast", "bum", "bunny fucker", "butt", "butthole", "butt-munch", "butt-plug",
     "carpet muncher", "clit", "clitoris", "cock", "cock-sucker", "cockface", "cockhead", "cock-munch", "cock-muncher", "cock-suck", "crap", "cum", "cumshot", "cunnilingus", "cunt", "cunt-lick", "cunt-licker",
@@ -11,9 +13,9 @@ var badWordsList = {
     "s o b", "sadist", "schlong", "scrote", "scrote sac", "scrotum", "semen", "vinegar stroke", "shit dick", "shit fuck", "doo doo breath", "shitter-mouth", "skank", "slut", "smegma",
     "snatch", "son-of-a-bitch", "spunk-stained-face", "s h i t h e a d", "testie", "testicle", "tit", "tit-fuck", "tittie-fucker", "titty-fuck", "tosser", "turd", "twat", "twat-head", "vagina", "viagra", "vulva", "wang", "wanker",
     "whore", "willy", "x x x tra big asshole", "triple asshole", "slut-face", "whore-mouth", "gang-bang-butt", "fart-fucker", "armpit-breath", "barbeque-butt", "porno-face", "twerking-hobo", "fart-sniffer", "butt-wrinkle", "garbage-head", "buttface", "dog-breath", "buttburger", "pee-pee-face", "eyebrowless-person",
-    "fuck-nugget", "terd-nose", "vulva-nose", "booger-labia", "booger-butt", "poop-crotch", "stinky-fart", "butt-booger", "dickweed", "toilet-fucker", "ball-sniffer", "b i t c h"]
+    "fuck-nugget", "terd-nose", "vulva-nose", "booger-labia", "booger-butt", "poop-crotch", "stinky-fart", "butt-booger", "dickweed", "toilet-fucker", "ball-sniffer", "b i t c h", "trollop", "maggot" ,"ninny","pillock","elitist","butterface"]
 
-};
+
 
 var testList = {
   list: [
@@ -2018,8 +2020,11 @@ id: 355472,
 word: "zaires"
 }
 ].map(function(el){
-  return el.word
+  return el.word;
 })
+<<<<<<< HEAD
 
 
 }
+=======
+>>>>>>> 524fc271ba993a239d7c84f0d25243f908835214
