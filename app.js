@@ -10,20 +10,20 @@ var insult = {
     randomArray: testList.list,
     name: "",
     apiKey: "",
-    numInsults: 0
+    numInsults: 5,
+    voice: "UK English Female",
+    voiceArray = [];
   },
   presentation: function () {
-    // insult.getRandomWords();
+
+    insult.getVoiceList();
   },
   events: function () {
     // thanks Brandon!
     $(".giantButton").on("click", function(event){
       event.preventDefault();
       insult.config.name =  $("input[name='name']").val();
-      insult.generateWordList(3,2);
-      insult.generateInsultString();
-      $(".insultText").html(insult.config.insultString);
-      responsiveVoice.speak(insult.config.insultString);
+      insult.deployInsult();
     });
 
     // small button appears
@@ -34,8 +34,20 @@ var insult = {
     });
 
     $(".smallButtonArea").on("click", ".smallButton", function(event){
-      responsiveVoice.speak(insult.config.insultString);
+      responsiveVoice.speak(insult.config.insultString, insult.config.voice);
     });
+  },
+  deployInsult: function(){
+    var rand = insult.getRandomInsultNumbers();
+    insult.generateWordList(rand[0], rand[1]);
+    insult.generateInsultString();
+    $(".insultText").html(insult.config.insultString);
+    responsiveVoice.speak(insult.config.insultString, insult.config.voice);
+  },
+  getRandomInsultNumbers: function(){
+    var firstNumber = _.random(0, insult.config.numInsults);
+    var secondNumber = (insult.config.numInsults - firstNumber);
+    return [firstNumber, secondNumber];
   },
   getRandomWords: function() {
     var requestStr = "";
@@ -47,7 +59,6 @@ var insult = {
   returnWords: function(data) {
     insult.config.randomArray = data;
   },
-
   generateWordList: function(numRandom, numBad) {
     insult.config.wordsArray = [];
     for(var i = 0; i < numRandom; i++){
@@ -64,6 +75,15 @@ var insult = {
       return insult.config.insultString += el + " ";
     });
     insult.config.insultString += "!";
+  },
+  getVoiceList: function(){
+    insult.config.voiceArray = responsiveVoice.getVoices();
+  },
+  displayVoice: function(){
+
+  }
+  buildVoiceList: function(){
+    var tmpl =
   }
 
 };
