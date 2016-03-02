@@ -22,18 +22,18 @@ var insult = {
       insult.generateWordList(3,2);
       insult.generateInsultString();
       $(".insultText").html(insult.config.insultString);
-      responsiveVoice.speak(insult.config.insultString)
+      responsiveVoice.speak(insult.config.insultString);
     });
 
     // small button appears
     $('.giantButton').on('click', function(event) {
       event.preventDefault();
           var button = '<button class="smallButton">Play Again</button>';
-          $('.smallButtonArea').append(button);
+          $('.smallButtonArea').html(button);
     });
 
-    $(".smallButton").on("click", function(event){
-      responsiveVoice.speak(insult.config.insultString)
+    $(".smallButtonArea").on("click", ".smallButton", function(event){
+      responsiveVoice.speak(insult.config.insultString);
     });
 
 
@@ -43,7 +43,7 @@ var insult = {
     $.ajax({
         type: "GET",
         url: requestStr,
-    }).success(insult.returnWords)
+    }).success(insult.returnWords);
   },
   returnWords: function(data) {
     insult.config.randomArray = data;
@@ -63,11 +63,11 @@ var insult = {
     insult.config.insultString = insult.config.name + " is a ";
     insult.config.wordsArray.forEach(function(el){
       return insult.config.insultString += el + " ";
-    })
+    });
     insult.config.insultString += "!";
   }
 
-}
+};
 
 $(document).ready(function(){
   insult.init();
