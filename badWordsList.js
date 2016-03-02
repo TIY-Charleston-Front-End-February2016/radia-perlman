@@ -1,4 +1,4 @@
-// bad words from https://www.npmjs.com/package/badwords
+// bad words edited from https://www.npmjs.com/package/badwords
 
 var badWordsList = {
 
@@ -19,6 +19,7 @@ var badWordsList = {
     "barmy", "dodgy berk", "git", "naff", "plonker", "prat", "trollop", "twit", "lazy sod", "wazzock", "ninny", "berk", "chuffer", "gannet", "maggot"]
 
 
+}
 
 
 var testList = {
@@ -2026,13 +2027,4 @@ word: "zaires"
 ].map(function(el){
   return el.word;
 })
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
 }
-=======
->>>>>>> 524fc271ba993a239d7c84f0d25243f908835214
-=======
-}
->>>>>>> 507c97638511457d96034cb8dac27493029bce00
