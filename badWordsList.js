@@ -1,17 +1,17 @@
 // bad words from https://www.npmjs.com/package/badwords
 var badWordsList = {
-  list: ["anus", "arrse", "arse", "ass", "asshole", "boob", "ballbag", "ballsack", "ballsac", "bastard", "bellend", "biatch", "bitch", "biznatch",
-    "blowjob", "blowjob", "bollock", "bollok", "boner", "boooooooob", "boooooooooob", "breast", "bugger", "bum", "bunny fucker", "butt", "butthole", "buttmunch", "buttplug",
-    "carpet muncher", "cawk", "clit", "clitoris", "cock", "cock-sucker", "cockface", "cockhead", "cockmunch", "cockmuncher", "cocksuck", "crap", "cum", "cummer", "cumshot", "cunnilingus", "cunt", "cuntlick", "cuntlicker",
-    "cunts", "cyberfuc", "cyberfuck", "cyberfucker", "d1ck", "dick", "dickhead", "dildo", "dog-fucker", "doooooosh", "duche", "ejaculate", "ejaculation",  "f u c k", "f u c k e r", "fanny", "fannyflap", "fannyfucker", "fanyy", "farthead",
-    "farter", "fart", "fatass", "fellatio", "fingerfuck", "fingerfucker", "fistfuck", "fistfucker", "fucker", "fuckhead", "fuckingshitmotherfucker", "fuckwhit", "fuckwit", "fudge packer",
-   "gangbang", "goddamn", "goddamned", "hardcoresex", "hotsex", "jack-off", "jackoff", "jerk-off", "jism", "jiz", "jizm", "jizz", "knob", "knobead", "knobend", "knobhead", "labia",
-    "masochist", "masterbation", "masturbater", "mo-fo", "mofo", "mothafuck", "mothafucka",  "mothafucker", "mother fucker", "muff", "nob", "nobhead", "numbnut", "nutsack", "orgasm",
-   "pecker", "penis", "penisfucker", "phonesex", "pigfucker", "piss", "pisser", "pissflap", "poop", "porn", "porno", "pornography", "prick", "pube", "pussy", "rectum",
-    "s.o.b.", "sadist", "schlong", "scrote", "scrotum", "semen", "sex", "shitdick", "shitfuck", "shitfull", "shithead", "shitter", "skank", "slut", "smegma",
-    "snatch", "son-of-a-bitch", "spunk", "s h i t", "testical", "testicle", "tit", "titfuck", "tittiefucker", "tittyfuck", "tosser", "turd", "tw4t", "twat", "twathead", "vagina", "viagra", "vulva", "wang", "wanker",
-    "whore", "willy", "xxx", "slut-face", "whore-mouth", "gangbangbutt", "fart-fucker", "armpit-breath", "barbeque-butt", "porno-face", "twerking-hobo", "fart-sniffer", "butt-wrinkle", "garbage-head", "buttface", "dog-breath", "buttburger", "pee-pee-face", "eyebrowless-person",
-    "fuck-nugget", "terd-nose", "vulva-nose", "poop-crotch", "stinky-fart", "dickweed", "toilet-fucker", "ball-sniffer", "b i t c h"]
+  list: ["anus", "arse", "ass", "asshole", "boob", "ballbag", "ballsac", "bastard", "bellend", "biatch", "bitch", "biznatch",
+    "blowjob", "bollock", "bollok", "boner", "boooooooob", "boooooooooob", "breast", "bum", "bunny fucker", "butt", "butthole", "butt-munch", "butt-plug",
+    "carpet muncher", "clit", "clitoris", "cock", "cock-sucker", "cockface", "cockhead", "cock-munch", "cock-muncher", "cock-suck", "crap", "cum", "cumshot", "cunnilingus", "cunt", "cunt-lick", "cunt-licker",
+    "cyber-fucker", "dick", "dickhead", "dildo", "dog-fucker", "douche", "ejaculate", "ejaculation-station",  "f u c k", "f u c k e r", "fanny", "fanny-flap", "fanny-fucker", "fany-breath", "fart-head",
+    "farter", "fart", "fatass", "fellatio-face", "finger-fucker", "fist-fuck-face", "fist-fucker", "fucker", "fuck-head", "fucking-shit-mother-fucker", "fudge packer",
+   "gang bang", "god damn hot dog", "hardcore sex", "hot sex", "jack-off", "jackoff", "jerk-off", "jism", "jizz", "knob", "knob-end", "knob-head", "labia",
+    "masochist", "masterbation", "masturbater", "mo-fo", "motha-fuck", "motha-fucka", "mother fucker", "muff", "nob",  "numb-nut", "nut-sack", "orgasm breath",
+   "pecker", "penis", "penis fucker", "phone sex dude", "pig fucker", "piss", "pisser", "piss flap", "poooooooooooop", "porn", "porno", "pornography", "prick", "pube", "pussy", "rectum",
+    "s o b", "sadist", "schlong", "scrote", "scrote sac", "scrotum", "semen", "vinegar stroke", "shit dick", "shit fuck", "doo doo breath", "shitter-mouth", "skank", "slut", "smegma",
+    "snatch", "son-of-a-bitch", "spunk-stained-face", "s h i t h e a d", "testie", "testicle", "tit", "tit-fuck", "tittie-fucker", "titty-fuck", "tosser", "turd", "twat", "twat-head", "vagina", "viagra", "vulva", "wang", "wanker",
+    "whore", "willy", "x x x tra big asshole", "triple asshole", "slut-face", "whore-mouth", "gang-bang-butt", "fart-fucker", "armpit-breath", "barbeque-butt", "porno-face", "twerking-hobo", "fart-sniffer", "butt-wrinkle", "garbage-head", "buttface", "dog-breath", "buttburger", "pee-pee-face", "eyebrowless-person",
+    "fuck-nugget", "terd-nose", "vulva-nose", "booger-labia", "booger-butt", "poop-crotch", "stinky-fart", "butt-booger", "dickweed", "toilet-fucker", "ball-sniffer", "b i t c h"]
 
 };
 
@@ -2022,5 +2022,4 @@ word: "zaires"
 })
 
 
->>>>>>> ebe7237bc5124a5d3c49077d88c17c343d576521
 }
