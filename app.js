@@ -36,7 +36,7 @@ var insult = {
       if(event.keyCode === 32){
         annyang.start();
       }
-      setTimeout(annyang.abort, 10000);
+      setTimeout(annyang.abort, 15000);
     })
 
     $('.dropdown').on("click", "a", function(event){
